@@ -1,0 +1,44 @@
+{
+  "name": "@tablette/module-shapefile",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Studio module: draw and outline shapes on map apps, persisted as GeoJSON.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayamkepencet/module-shapefile-v2.git"
+  },
+  "private": false,
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "studioModule": {
+    "id": "shapefile",
+    "entry": "./dist/index.js",
+    "export": "shapefileModule"
+  },
+  "peerDependencies": {
+    "@tablette/module-sdk": "^0.1.0",
+    "ai": "^5.0.253",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@tablette/module-sdk": "^0.1.0",
+    "ai": "^5.0.253",
+    "zod": "^3.25.0",
+    "typescript": "^5.7.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.unit.ts"
+  }
+}

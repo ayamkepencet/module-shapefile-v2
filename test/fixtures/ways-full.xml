@@ -1,0 +1,23 @@
+<osm version="0.6" generator="test-fixture">
+  <node id="1" lat="48.0" lon="-4.6" visible="true"/>
+  <node id="2" lat="48.01" lon="-4.6" visible="true"/>
+  <node id="3" lat="48.01" lon="-4.59" visible="true"/>
+  <node id="4" lat="48.0" lon="-4.59" visible="true"/>
+  <node id="5" lat="48.005" lon="-4.605" visible="true"/>
+  <way id="52477381" visible="true">
+    <nd ref="1"/>
+    <nd ref="2"/>
+    <nd ref="3"/>
+    <nd ref="4"/>
+    <nd ref="1"/>
+    <tag k="building" v="yes"/>
+    <tag k="name" v="Test Building"/>
+  </way>
+  <way id="900000001" visible="true">
+    <nd ref="5"/>
+    <nd ref="2"/>
+    <nd ref="3"/>
+    <tag k="highway" v="footway"/>
+    <tag k="name" v="Test Path"/>
+  </way>
+</osm>

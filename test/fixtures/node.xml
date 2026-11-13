@@ -1,0 +1,6 @@
+<osm version="0.6" generator="test-fixture">
+  <node id="164979149" lat="47.9490211" lon="-4.5433424" visible="true">
+    <tag k="name" v="Test Node"/>
+    <tag k="amenity" v="cafe"/>
+  </node>
+</osm>
